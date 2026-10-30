@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fretwork Support</title>
+</head>
+<body>
+<header class="masthead">
+  <span class="wordmark">Fret<span class="accent">work</span></span>
+  <span class="kicker">Support</span>
+</header>
+
+<main class="wrap">
+  <p class="lede">
+    Fretwork is a guitar reference: chords, scales, the CAGED system, the circle
+    of fifths, tab reading, a tuner, and a metronome — all worked out from music
+    theory, so they adapt to any tuning. Need a hand? Here is how to reach us and
+    answers to the questions that come up most.
+  </p>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Email <a class="contact" href="mailto:hkfaresources@gmail.com">hkfaresources@gmail.com</a>
+      with any question, bug, or request. Include your device and iOS version and
+      we will get back to you.
+    </p>
+  </section>
+
+  <section>
+    <h2>The tuner is not picking up my string</h2>
+    <p>
+      Pluck one string firmly and let it ring, and play close to the microphone —
+      a fresh pluck reads better than a fading one. Make sure Fretwork has
+      microphone access in <strong>Settings &rsaquo; Fretwork &rsaquo;
+      Microphone</strong>. If the tuner says it could not open the microphone,
+      close any other app that is using it and try again. All pitch detection
+      happens on your device; audio is never recorded or uploaded.
+    </p>
+  </section>
+
+  <section>
+    <h2>How do I unlock everything?</h2>
+    <p>
+      Fretwork Pro is a <strong>one-time purchase — no subscription, no ads</strong>.
+      It unlocks every alternate and custom tuning, the CAGED system, the circle
+      of fifths, arpeggios, and the extended and altered chords. Every scale is
+      free. Open the
+      <strong>Tools</strong> tab and tap <strong>Unlock Fretwork Pro</strong>, or
+      tap any locked feature.
+    </p>
+  </section>
+
+  <section>
+    <h2>I bought Pro before, or got a new phone</h2>
+    <p>
+      Your purchase is tied to your Apple Account. On the unlock screen, tap
+      <strong>Restore purchase</strong> and Pro will unlock again at no charge.
+    </p>
+  </section>
+
+  <section>
+    <h2>Can I build my own tuning?</h2>
+    <p>
+      Yes. On the <strong>Chords</strong> or <strong>Scales</strong> tab, open the
+      <strong>Tuning</strong> selector and tap <strong>Edit</strong> to set each
+      string. Everything — chords, scales, and the tuner — adapts to it instantly.
+    </p>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>
+      Fretwork collects no personal data and nothing you do ever leaves your
+      device. Full details are in the
+      <a class="contact" href="privacy.html">privacy policy</a>.
+    </p>
+  </section>
+</main>
+
+<footer class="foot">Fretwork · Any chord, any scale, any tuning</footer>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --ground: #faf8f3;
+    --panel: #ffffff;
+    --ink: #201d18;
+    --ink-dim: #6b6357;
+    --rule: #e7e1d4;
+    --amber: #c07f16;
+    --tolex: #14120f;
+    --measure: 64ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #14120f;
+      --panel: #1c1915;
+      --ink: #e8e2d4;
+      --ink-dim: #9a9284;
+      --rule: #322c23;
+      --amber: #e9a63c;
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #faf8f3; --panel: #ffffff; --ink: #201d18; --ink-dim: #6b6357;
+    --rule: #e7e1d4; --amber: #c07f16;
+  }
+  :root[data-theme="dark"] {
+    --ground: #14120f; --panel: #1c1915; --ink: #e8e2d4; --ink-dim: #9a9284;
+    --rule: #322c23; --amber: #e9a63c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .masthead {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px;
+    max-width: var(--measure);
+    margin: 0 auto; padding: 44px 22px 18px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .wordmark {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800; font-size: 1.55rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink);
+  }
+  .wordmark .accent { color: var(--amber); }
+  .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+
+  .wrap { max-width: var(--measure); margin: 0 auto; padding: 8px 22px 40px; }
+  .lede { font-size: 1.16rem; margin: 26px 0 8px; }
+  section { padding: 20px 0; border-top: 1px solid var(--rule); }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.96rem; font-weight: 700; letter-spacing: 0.02em;
+    text-transform: uppercase; color: var(--amber);
+    margin: 0 0 6px; text-wrap: balance;
+  }
+  p { margin: 0; }
+  strong { font-weight: 700; }
+  .contact {
+    font-family: "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.01em;
+    font-weight: 700; color: var(--amber); text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .contact:hover { border-bottom-color: var(--amber); }
+  .contact:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .foot {
+    max-width: var(--measure); margin: 0 auto; padding: 22px;
+    border-top: 1px solid var(--rule);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+</style>
+
+</body>
+</html>
